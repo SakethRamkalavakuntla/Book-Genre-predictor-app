@@ -8,10 +8,10 @@ Built using **Python**, **Scikit-learn**, and a clean web interface with **Flask
 ## 🖼️ Demo Screenshots
 
 ### 🔹 Home Page (User Input Form)
-![Index Page](screenshots/index_page.png)
+![Index Page](images/index_page.png)
 
 ### 🔹 Prediction Result Page
-![Result Page](screenshots/result_page.png)
+![Result Page](images/result_page.png)
 
 > ⚠️ **Note:** Add your actual screenshots to the `/screenshots` folder and update the paths above.
 
