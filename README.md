@@ -12,7 +12,7 @@ Built using **Python**, **Scikit-learn**, and a clean web interface with **Flask
 ### 🔹 Prediction Result Page
 [Result Page](images/result_page.png)
 
-> ⚠️ **Note:** Add your actual screenshots to the `/screenshots` folder and update the paths above.
+
 
 ---
 
