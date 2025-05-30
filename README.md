@@ -60,5 +60,5 @@ Built using **Python**, **Scikit-learn**, and a clean web interface with **Flask
 
 1. **Clone the repo**
    ```bash
-   git clone [https://github.com/SakethRamkalavakuntla/Book-Genre-predictor-app.git]
+   git clone [https://github.com/SakethRamkalavakuntla/Book-Genre-predictor-app-using-ML.git]
    cd book-genre-predictor
