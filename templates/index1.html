@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Genre Predictor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f2f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: vertical;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e6f4ea;
+            border-left: 6px solid #2e7d32;
+            border-radius: 8px;
+        }
+
+        .result h3 {
+            margin-top: 0;
+        }
+
+        .error {
+            margin-top: 20px;
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Genre Predictor</h1>
+        <form method="POST">
+            <label for="summary">Enter a brief summary of the book:</label>
+            <textarea name="summary" id="summary" placeholder="e.g., A young wizard begins his journey at a magical school..."></textarea>
+            <button type="submit" class="btn">Predict Genre</button>
+        </form>
+
+        {% if showresult %}
+        <div class="result">
+            <h3>Prediction Result</h3>
+            <p><strong>The summary you provided is:</strong></p>
+            <p>"{{ text }}...."</p>
+            <p><strong>Predicted Genre:</strong> {{ genre }}</p>
+        </div>
+        {% endif %}
+
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+    </div>
+
+    <footer>
+        &copy; 2025 Book Genre Predictor App
+    </footer>
+</body>
+</html>
