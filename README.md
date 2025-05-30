@@ -9,7 +9,6 @@ Built using **Python**, **Scikit-learn**, and a clean web interface with **Flask
 
 ### 🔹 Home Page (User Input Form)
 ![Index Page](images/index_page.png)
-
 ### 🔹 Prediction Result Page
 ![Result Page](images/result_page.png)
 
